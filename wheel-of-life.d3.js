@@ -1,7 +1,7 @@
 function wheelOfLife(selector, csv) {
   var svg = d3.select(selector);
 
-  d3.csv(csv,
+  d3.csv(csv + '?' + new Date().getTime(),
     function(d, i) {
       return {
         description: d.description,
