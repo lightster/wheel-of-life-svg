@@ -5,7 +5,7 @@ function wheelOfLife(selector, csv) {
     function(d, i) {
       return {
         description: d.description,
-        sort: d.sort,
+        sort: +d.sort,
         rating: d.rating,
         r: d.rating * d.rating
       };
